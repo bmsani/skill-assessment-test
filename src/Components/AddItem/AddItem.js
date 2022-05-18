@@ -1,3 +1,4 @@
+import cogoToast from 'cogo-toast';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -19,7 +20,7 @@ const AddItem = () => {
         })
         .then(res => res.json())
         .then(data => {
-            console.log(data);
+            cogoToast.success('Successful',{heading:'Task added'})
             navigate('/')
         })
     }
