@@ -20,10 +20,11 @@ const Header = () => {
                         <li><Link to='/additem'> Add Item</Link></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
+                <a class="btn btn-ghost normal-case text-xl">MY Todo list</a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal p-0">
+                    <li><Link to='/'> Home</Link></li>
                     <li><Link to='/additem'> Add Item</Link></li>
                 </ul>
             </div>
