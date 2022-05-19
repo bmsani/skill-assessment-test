@@ -11,7 +11,7 @@ const AddItem = () => {
             description: event.target.description.value
         };
 
-        fetch('http://localhost:5000/task', {
+        fetch('https://limitless-sands-79831.herokuapp.com/task', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

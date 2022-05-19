@@ -5,7 +5,7 @@ const Home = () => {
     const [complete, setComplete] = useState(false);
 
     useEffect(() => {
-        fetch('http://localhost:5000/task')
+        fetch('https://limitless-sands-79831.herokuapp.com/task')
             .then(res => res.json())
             .then(data => setTasks(data));
 
@@ -13,7 +13,7 @@ const Home = () => {
 
     const handleTaskDone = id => {
         const taskDone = {done: true};
-        const url = `http://localhost:5000/task/${id}`;
+        const url = `https://limitless-sands-79831.herokuapp.com/task/${id}`;
         fetch(url,{
             method: "PUT",
                 headers: {
@@ -33,7 +33,7 @@ const Home = () => {
         const proceed = window.confirm("Are you sure you want to delete this item?")
 
         if (proceed) {
-            const url = `http://localhost:5000/task/${id}`
+            const url = `https://limitless-sands-79831.herokuapp.com/task/${id}`
             fetch(url, {
                 method: "DELETE",
             })
